@@ -17,6 +17,12 @@ Boilerplate application for a Flask JWT Backend and a React/Redux Front-End with
 ![screenshot](http://i.imgur.com/ZIS4qkw.png)
 
 ### Create DB
+Start a database daemon and create a database on your computer (localhost) or elsewhere
+- mysql
+- postgresql
+- sqlite
+
+#### Point env variable DATABASE_URL at database
 ```sh
 $ export DATABASE_URL="postgresql://username:password@localhost/mydatabase"
 
@@ -27,6 +33,8 @@ $ export DATABASE_URL="mysql+mysqlconnector://username:password@localhost/mydata
 or
 
 $ export DATABASE_URL="sqlite:///your.db"
+
+$ export DATABASE_URL="postgresql://localhost/testdb"
 ```
 (More about connection strings in this [flask config guide](http://flask-sqlalchemy.pocoo.org/2.1/config/).)
 ```
@@ -72,6 +80,12 @@ $ npm start
 $ npm run build:production
 ```
 
+### New to Github?
+#### Common FAQ
+##### Getting started contributing (git push issues)
+- If 2 factor authentication is on, you must generate a personal access token with access to repositories and, when pushing, use that token as your password.
+[https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/]
+
 ### New to Python?
 
 If you are approaching this demo as primarily a frontend dev with limited or no python experience, you may need to install a few things that a seasoned python dev would already have installed.
@@ -80,7 +94,7 @@ Most Macs already have python 2.7 installed but you may not have pip install. Yo
 
 ```
 $ python --version
-$ pip --version 
+$ pip --version
 ```
 
 If pip is not installed, you can follow this simple article to [get both homebrew and python](https://howchoo.com/g/mze4ntbknjk/install-pip-on-mac-os-x)
@@ -94,12 +108,12 @@ $ brew install python3
 Now you can check again to see if both python and pip are installed. Once pip is installed, you can download the required flask modules:
 
 ```
-$ sudo pip install flask flask_script flask_migrate flask_bcrypt 
+$ sudo pip install flask flask_script flask_migrate flask_bcrypt
 ```
 
-Now, you can decide on which database you wish to use. 
+Now, you can decide on which database you wish to use.
 
-#### New to MySQL? 
+#### New to MySQL?
 
 If you decide on MySQL, install the free community edition of [MySQL](https://dev.mysql.com/downloads/mysql/) and [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
@@ -132,7 +146,7 @@ $ npm start
 ```
 
 6. open your browser to http://localhost:3000/register and setup your first account
-7. enjoy! By this point, you should be able to create an account and login without errors. 
+7. enjoy! By this point, you should be able to create an account and login without errors.
 
 
 
