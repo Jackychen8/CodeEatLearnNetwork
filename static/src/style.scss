@@ -6,20 +6,24 @@
 
 .title{
     text-align: center;
-    padding: 5em;
+    padding: 4em;
     font-size: 40px;
     font-weight: bold;
 }
 
-.groups{
-    height: 14em;
-    padding: 1.5em;
+.group{
+    height: 10em;
+    padding: 1em;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     background-color: #ecf0f1;
     border: 5px solid white;
     margin-bottom: 2em;
+}
+
+.sub-group{
+    font-size: 16px;
 }
 
 .show-col{

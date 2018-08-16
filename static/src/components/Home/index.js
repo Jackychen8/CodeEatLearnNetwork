@@ -11,39 +11,17 @@ export const Home = () =>
                 </Col>
               </Row>
               <Row>
-                <Col className="groups" xs={4}>
+                <Col className="group" xs={4}>
                     Code
+                    <div className="sub-group">We like to code.</div>
                 </Col>
-                <Col className="groups" xs={4}>
+                <Col className="group" xs={4}>
                     Eat
+                    <div className="sub-group">We like to eat.</div>
                 </Col>
-                <Col className="groups" xs={4}>
+                <Col className="group" xs={4}>
                     Learn
-                </Col>              </Row>
-              <Row className="show-grid">
-                <Col className="show-col" xs={6} md={4}>
-                    {3}
-                </Col>
-                <Col className="show-col" xs={6} md={4}>
-                    {4}
-                </Col>
-                <Col className="show-col" xsHidden md={4}>
-                    {5}
-                </Col>
-              </Row>
-
-              <Row className="show-grid">
-                <Col className="show-col" xs={6} xsOffset={6}>
-                    {6}
-                </Col>
-              </Row>
-
-              <Row className="show-grid">
-                <Col className="show-col" md={6} mdPush={6}>
-                    {7}
-                </Col>
-                <Col className="show-col" md={6} mdPull={6}>
-                    {8}
+                    <div className="sub-group">We like to learn.</div>
                 </Col>
               </Row>
             </Grid>
