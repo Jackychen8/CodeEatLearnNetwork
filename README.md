@@ -4,23 +4,23 @@
 
 # Start Running the App
 1. Database
-    A. PostgreSQL
+    1. PostgreSQL
         1. Download & Install
         2. Start Postgres Daemon
         3. Use Postgres CLI to create testdb
 2. Backend
-    A. Python
+    1. Python
         1. Create virtual environment with virtualenv (Python 2.7) `virtualenv venv`
         2. Start virtual environment `$ source venv/bin/activate`
         3. Install required packages `$ pip install -r requirements.txt`
-    B. Flask
+    2. Flask
         1. Set environment variable to recognize db. `$ export DATABASE_URL="postgresql://localhost/testdb"`
         2. Run Flask Server from main directory `$ python manage.py runserver`
 3. Frontend
-    A. Start a new terminal window
-    B. Move into frontend code's directory from previous directory `$ cd static`
-    C. Install dependencies `$ npm install`
-    D. Start Frontend server `npm start`
+    1. Start a new terminal window
+    2. Move into frontend code's directory from previous directory `$ cd static`
+    3. Install dependencies `$ npm install`
+    4. Start Frontend server `npm start`
 
 
 
