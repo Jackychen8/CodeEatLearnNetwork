@@ -2,7 +2,7 @@
 1. Clone repository `git clone https://github.com/Jackychen8/CodeEatLearnNetwork.git`
 2. Enter repository `cd CodeEatLearnNetwork`
 
-# Start Running the App [Database Daemon (PostgreSQL, MySQL, SQLite), Flask/Python, React Redux/NPM)
+# Start Running the App
 1. Database
     A. PostgreSQL
         1. Download & Install
