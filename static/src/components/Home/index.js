@@ -10,7 +10,16 @@ export const Home = () =>
                     Code, Eat, Learn.
                 </Col>
               </Row>
-
+              <Row>
+                <Col className="groups" xs={4}>
+                    Code
+                </Col>
+                <Col className="groups" xs={4}>
+                    Eat
+                </Col>
+                <Col className="groups" xs={4}>
+                    Learn
+                </Col>              </Row>
               <Row className="show-grid">
                 <Col className="show-col" xs={6} md={4}>
                     {3}
