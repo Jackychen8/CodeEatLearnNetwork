@@ -1,3 +1,29 @@
+# Get started
+1. Clone repository `git clone https://github.com/Jackychen8/CodeEatLearnNetwork.git`
+2. Enter repository `cd CodeEatLearnNetwork`
+
+# Start Running the App [Database Daemon (PostgreSQL, MySQL, SQLite), Flask/Python, React Redux/NPM)
+1. Database
+    A. PostgreSQL
+        1. Download & Install
+        2. Start Postgres Daemon
+        3. Use Postgres CLI to create testdb
+2. Backend
+    A. Python
+        1. Create virtual environment with virtualenv (Python 2.7) `virtualenv venv`
+        2. Start virtual environment `$ source venv/bin/activate`
+        3. Install required packages `$ pip install -r requirements.txt`
+    B. Flask
+        1. Set environment variable to recognize db. `$ export DATABASE_URL="postgresql://localhost/testdb"`
+        2. Run Flask Server from main directory `$ python manage.py runserver`
+3. Frontend
+    A. Start a new terminal window
+    B. Move into frontend code's directory from previous directory `$ cd static`
+    C. Install dependencies `$ npm install`
+    D. Start Frontend server `npm start`
+
+
+
 # React-Redux-Flask #
 
 Boilerplate application for a Flask JWT Backend and a React/Redux Front-End with Material UI.
