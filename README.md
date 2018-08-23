@@ -274,5 +274,5 @@ postgres=#
 postgres=# \q
 MTVL16076ce6e:static jxie2$ 
 
-11.  Congratulations for finish the tutorial!  And thank the technical writer Jia for her awesome work!
+11.  Congratulations for finish the tutorial!  And pleae thank the technical writer Jia for her awesome work!
 ```
