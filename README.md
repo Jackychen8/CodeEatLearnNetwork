@@ -202,8 +202,6 @@ postgres=#
 postgres=# create database testdb;
 CREATE DATABASE
 
-
-
 4. list of database within database: \l
 
 postgres=# \l
