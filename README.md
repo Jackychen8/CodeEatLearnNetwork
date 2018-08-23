@@ -281,5 +281,5 @@ Additional resources:
 https://www.postgresql.org/docs/9.5/static/sql-createrole.html
 http://www.postgresqltutorial.com/
 
-And pleae thank the technical writer Jia for her awesome work!
+And please thank the technical writer Jia for her awesome work!
 ```
