@@ -274,7 +274,7 @@ postgres=# \q
 MTVL16076ce6e:static jxie2$ 
 
 
-Congratulations for finish the tutorial!  
+Congratulations on finishing the tutorial!  
 
 Additional resources: 
 
