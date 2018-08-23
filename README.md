@@ -229,7 +229,20 @@ testdb=# create role jjxie;
 CREATE ROLE
 testdb=# 
 
-7. list of tables and other objects: \d
+7. list of roles and users: \du
+
+testdb=# \du
+                                   List of roles
+ Role name |                         Attributes                         | Member of 
+-----------+------------------------------------------------------------+-----------
+ jia       |                                                            | {}
+ jiajia    | Create DB                                                  | {}
+ jjxie     | Cannot login                                               | {}
+ jxie2     | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+ sbg       |                                                            | {}
+
+
+8. list of tables and other objects: \d
 
 testdb=# \d
             List of relations
@@ -239,7 +252,7 @@ testdb=# \d
  public | user_id_seq | sequence | jxie2
 (2 rows)
 
-8. describe the table:  \d tablename
+9. describe the table:  \d tablename
 
                                      Table "public.user"
   Column  |          Type          | Collation | Nullable |             Default              
@@ -252,7 +265,7 @@ Indexes:
     "user_email_key" UNIQUE CONSTRAINT, btree (email)
 
 
-9. show the content of the table:   select * from schemaname.tablename;
+10. show the content of the table:   select * from schemaname.tablename;
 
 testdb=# select * from public.user;
  id |      email       |                           password                           
@@ -260,11 +273,6 @@ testdb=# select * from public.user;
   1 | jiaxie@gmail.com | $2a$12$geBdB0LnrDvJRVL5C0S8m./xKWFNHvsOw8lmJ1qphrDYVN0/SJMe2
 (1 row)
 
-10. change database: \c newdatabase
-
-testdb=# \c postgres;
-You are now connected to database "postgres" as user "jxie2".
-postgres=# 
 
 I lied.  There is one more step.
 
