@@ -219,19 +219,19 @@ postgres=# \l
            |       |          |             |             | jxie2=CTc/jxie2  +
            |       |          |             |             | jiajia=CTc/jxie2
 
-4. switch to a database within a database: \c newdatabase
+5. switch to a database within a database: \c newdatabase
 
 postgres=# \c testdb
 You are now connected to database "testdb" as user "jxie2".
 testdb=# 
 
-5. create role:  create role somerole
+6. create role:  create role somerole
 
 testdb=# create role jjxie;
 CREATE ROLE
 testdb=# 
 
-6. list of tables and other objects: \d
+7. list of tables and other objects: \d
 
 testdb=# \d
             List of relations
@@ -241,7 +241,7 @@ testdb=# \d
  public | user_id_seq | sequence | jxie2
 (2 rows)
 
-7. describe the table:  \d tablename
+8. describe the table:  \d tablename
 
                                      Table "public.user"
   Column  |          Type          | Collation | Nullable |             Default              
@@ -254,7 +254,7 @@ Indexes:
     "user_email_key" UNIQUE CONSTRAINT, btree (email)
 
 
-8. show the content of the table:   select * from schemaname.tablename;
+9. show the content of the table:   select * from schemaname.tablename;
 
 testdb=# select * from public.user;
  id |      email       |                           password                           
@@ -262,19 +262,21 @@ testdb=# select * from public.user;
   1 | jiaxie@gmail.com | $2a$12$geBdB0LnrDvJRVL5C0S8m./xKWFNHvsOw8lmJ1qphrDYVN0/SJMe2
 (1 row)
 
-9. change database: \c newdatabase
+10. change database: \c newdatabase
 
 testdb=# \c postgres;
 You are now connected to database "postgres" as user "jxie2".
 postgres=# 
 
-10.  get out of a database \q 
+I lied.  There is one more step.
+
+11.  get out of a database \q 
 
 postgres=# \q
 MTVL16076ce6e:static jxie2$ 
 
 
-11.  Congratulations for finish the tutorial!  
+Congratulations for finish the tutorial!  
 
 Additional resources: 
 
