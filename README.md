@@ -174,6 +174,103 @@ $ npm start
 6. open your browser to http://localhost:3000/register and setup your first account
 7. enjoy! By this point, you should be able to create an account and login without errors.
 
+#### New to Postgres?  10 Easy Step to Start Postgres
+
+1. show list of database: psql -l
+
+MTVL16076ce6e:static jxie2$ psql -l
+                              List of databases
+   Name    | Owner | Encoding |   Collate   |    Ctype    | Access privileges 
+-----------+-------+----------+-------------+-------------+-------------------
+ postgres  | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ template0 | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jxie2         +
+           |       |          |             |             | jxie2=CTc/jxie2
+ template1 | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jxie2         +
+           |       |          |             |             | jxie2=CTc/jxie2
+
+2. get into a database: psql postgres
+
+MTVL16076ce6e:static jxie2$ psql postgres
+psql (10.5)
+Type "help" for help.
+
+postgres=# 
+
+3. create database:  create database newdatabase
+
+postgres=# create database testdb;
+CREATE DATABASE
 
 
 
+4. list of database within database: \l
+
+postgres=# \l
+                              List of databases
+   Name    | Owner | Encoding |   Collate   |    Ctype    | Access privileges 
+-----------+-------+----------+-------------+-------------+-------------------
+ postgres  | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ template0 | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jxie2         +
+           |       |          |             |             | jxie2=CTc/jxie2
+ template1 | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jxie2         +
+           |       |          |             |             | jxie2=CTc/jxie2
+ testdb    | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/jxie2        +
+           |       |          |             |             | jxie2=CTc/jxie2  +
+           |       |          |             |             | jiajia=CTc/jxie2
+
+4. switch to a database within a database: \c newdatabase
+
+postgres=# \c testdb
+You are now connected to database "testdb" as user "jxie2".
+testdb=# 
+
+5. create role:  create role somerole
+
+testdb=# create role jjxie;
+CREATE ROLE
+testdb=# 
+https://www.postgresql.org/docs/9.5/static/sql-createrole.html
+
+6. list of tables and other objects: \d
+
+testdb=# \d
+            List of relations
+ Schema |    Name     |   Type   | Owner 
+--------+-------------+----------+-------
+ public | user        | table    | jxie2
+ public | user_id_seq | sequence | jxie2
+(2 rows)
+
+7. describe the table:  \d tablename
+
+                                     Table "public.user"
+  Column  |          Type          | Collation | Nullable |             Default              
+----------+------------------------+-----------+----------+----------------------------------
+ id       | integer                |           | not null | nextval('user_id_seq'::regclass)
+ email    | character varying(255) |           |          | 
+ password | character varying(255) |           |          | 
+Indexes:
+    "user_pkey" PRIMARY KEY, btree (id)
+    "user_email_key" UNIQUE CONSTRAINT, btree (email)
+
+
+8. show the content of the table:   select * from schemaname.tablename;
+
+testdb=# select * from public.user;
+ id |      email       |                           password                           
+----+------------------+--------------------------------------------------------------
+  1 | jiaxie@gmail.com | $2a$12$geBdB0LnrDvJRVL5C0S8m./xKWFNHvsOw8lmJ1qphrDYVN0/SJMe2
+(1 row)
+
+9. change database: \c newdatabase
+
+testdb=# \c postgres;
+You are now connected to database "postgres" as user "jxie2".
+postgres=# 
+
+10.  get out of a database \q 
+
+postgres=# \q
+MTVL16076ce6e:static jxie2$ 
+
+11.  Congratulations for finish the tutorial!  And thank the technical writer Jia for her awesome work!
