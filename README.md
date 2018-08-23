@@ -176,9 +176,9 @@ $ npm start
 
 #### New to Postgres?  Here Are 10 Easy Steps To Start Postgres
 
-```
 1. show list of database: psql -l
 
+```
 MTVL16076ce6e:static jxie2$ psql -l
                               List of databases
    Name    | Owner | Encoding |   Collate   |    Ctype    | Access privileges 
@@ -188,22 +188,23 @@ MTVL16076ce6e:static jxie2$ psql -l
            |       |          |             |             | jxie2=CTc/jxie2
  template1 | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/jxie2         +
            |       |          |             |             | jxie2=CTc/jxie2
+```
 
 2. get into a database: psql postgres
-
+```
 MTVL16076ce6e:static jxie2$ psql postgres
 psql (10.5)
 Type "help" for help.
 
 postgres=# 
-
+```
 3. create database:  create database newdatabase
-
+```
 postgres=# create database testdb;
 CREATE DATABASE
-
+```
 4. list of database within database: \l
-
+```
 postgres=# \l
                               List of databases
    Name    | Owner | Encoding |   Collate   |    Ctype    | Access privileges 
@@ -216,21 +217,21 @@ postgres=# \l
  testdb    | jxie2 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/jxie2        +
            |       |          |             |             | jxie2=CTc/jxie2  +
            |       |          |             |             | jiajia=CTc/jxie2
-
+```
 5. switch to a database within a database: \c newdatabase
-
+```
 postgres=# \c testdb
 You are now connected to database "testdb" as user "jxie2".
 testdb=# 
-
+```
 6. create role:  create role somerole
-
+```
 testdb=# create role jjxie;
 CREATE ROLE
 testdb=# 
-
+```
 7. list of roles and users: \du
-
+```
 testdb=# \du
                                    List of roles
  Role name |                         Attributes                         | Member of 
@@ -240,10 +241,10 @@ testdb=# \du
  jjxie     | Cannot login                                               | {}
  jxie2     | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
  sbg       |                                                            | {}
-
+```
 
 8. list of tables and other objects: \d
-
+```
 testdb=# \d
             List of relations
  Schema |    Name     |   Type   | Owner 
@@ -251,9 +252,10 @@ testdb=# \d
  public | user        | table    | jxie2
  public | user_id_seq | sequence | jxie2
 (2 rows)
-
+```
 9. describe the table:  \d tablename
-
+```
+testdb=# \d user
                                      Table "public.user"
   Column  |          Type          | Collation | Nullable |             Default              
 ----------+------------------------+-----------+----------+----------------------------------
@@ -263,24 +265,24 @@ testdb=# \d
 Indexes:
     "user_pkey" PRIMARY KEY, btree (id)
     "user_email_key" UNIQUE CONSTRAINT, btree (email)
-
+```
 
 10. show the content of the table:   select * from schemaname.tablename;
-
+```
 testdb=# select * from public.user;
  id |      email       |                           password                           
 ----+------------------+--------------------------------------------------------------
   1 | jiaxie@gmail.com | $2a$12$geBdB0LnrDvJRVL5C0S8m./xKWFNHvsOw8lmJ1qphrDYVN0/SJMe2
 (1 row)
-
+```
 
 I lied.  There is one more step.
 
 11.  get out of a database: \q 
-
+```
 postgres=# \q
 MTVL16076ce6e:static jxie2$ 
-
+```
 
 Congratulations on finishing the tutorial!  
 
@@ -291,4 +293,4 @@ http://www.postgresqltutorial.com/
 https://www.tutorialspoint.com/postgresql/postgresql_overview.htm
 
 And please thank the technical writer Jia for her awesome work!
-```
+
