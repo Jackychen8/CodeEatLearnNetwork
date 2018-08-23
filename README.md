@@ -174,7 +174,7 @@ $ npm start
 6. open your browser to http://localhost:3000/register and setup your first account
 7. enjoy! By this point, you should be able to create an account and login without errors.
 
-#### New to Postgres?  10 Easy Step to Start Postgres
+#### New to Postgres?  Here Are 10 Easy Steps To Start Postgres
 
 ```
 1. show list of database: psql -l
