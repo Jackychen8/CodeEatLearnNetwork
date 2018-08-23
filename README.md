@@ -289,7 +289,6 @@ Congratulations on finishing the tutorial!
 Additional resources: 
 
 https://www.postgresql.org/docs/9.5/static/sql-createrole.html
-
 http://www.postgresqltutorial.com/
 https://www.tutorialspoint.com/postgresql/postgresql_overview.htm
 
