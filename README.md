@@ -230,7 +230,6 @@ testdb=#
 testdb=# create role jjxie;
 CREATE ROLE
 testdb=# 
-https://www.postgresql.org/docs/9.5/static/sql-createrole.html
 
 6. list of tables and other objects: \d
 
@@ -274,5 +273,11 @@ postgres=#
 postgres=# \q
 MTVL16076ce6e:static jxie2$ 
 
-11.  Congratulations for finish the tutorial!  And pleae thank the technical writer Jia for her awesome work!
+
+11.  Congratulations for finish the tutorial!  
+
+Additional resources: https://www.postgresql.org/docs/9.5/static/sql-createrole.html
+http://www.postgresqltutorial.com/
+
+And pleae thank the technical writer Jia for her awesome work!
 ```
