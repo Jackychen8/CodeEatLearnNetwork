@@ -176,7 +176,8 @@ $ npm start
 
 #### New to Postgres?  10 Easy Step to Start Postgres
 
-```1. show list of database: psql -l
+```
+1. show list of database: psql -l
 
 MTVL16076ce6e:static jxie2$ psql -l
                               List of databases
