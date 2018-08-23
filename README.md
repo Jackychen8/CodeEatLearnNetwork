@@ -276,7 +276,7 @@ testdb=# select * from public.user;
 
 I lied.  There is one more step.
 
-11.  get out of a database \q 
+11.  get out of a database: \q 
 
 postgres=# \q
 MTVL16076ce6e:static jxie2$ 
